@@ -1,0 +1,117 @@
+{
+"categories": ["All", "Steak", "Pasta", "Pizza", "Drinks"],
+"products": [
+    {
+        "id": 1,
+        "name": "pizza 15$",
+        "price": 15,
+        "category": "Pizza",
+        "image": "images/pizza-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "pizza 12$",
+        "price": 12,
+        "category": "Pizza", 
+        "image": "images/pizza8.jpg"
+    },
+    {
+        "id": 3,
+        "name": "pizza 12$",
+        "price": 12,
+        "category": "Pizza",
+        "image": "images/pizza-2.jpg"
+    },
+    {
+        "id": 4,
+        "name": "pizza 17$",
+        "price": 17,
+        "category": "Pizza",
+        "image": "images/pizza-7.jpg"
+    },
+    {
+        "id": 5,
+        "name": "steak 15$",
+        "price": 15,
+        "category": "Steak",
+        "image": "images/res_img_4.jpg"
+    },
+    {
+        "id": 6,
+        "name": "steak 25$",
+        "price": 25,
+        "category": "Steak",
+        "image": "images/blog-img-3.jpg"
+    },
+    {
+        "id": 7,
+        "name": "steak 20$",
+        "price": 20,
+        "category": "Steak",
+        "image": "images/blog-img-4.jpg"
+    },
+    {
+        "id": 8,
+        "name": "steak 30$",
+        "price": 30,
+        "category": "Steak",
+        "image": "images/res_img_8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "steak 25$",
+        "price": 25,
+        "category": "Steak",
+        "image": "images/blog-bg.jpg"
+    },
+    {
+        "id": 10,
+        "name": "drink 15$",
+        "price": 15,
+        "category": "Drinks",
+        "image": "images/res_img_7.jpg"
+    },
+    {
+        "id": 11,
+        "name": "drink 10$",
+        "price": 10,
+        "category": "Drinks",
+        "image": "images/res_img_6.jpg"
+    },
+    {
+        "id": 12,
+        "name": "drink 7$",
+        "price": 7,
+        "category": "Drinks",
+        "image": "images/res_img_5.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Pasta 25$",
+        "price": 25,
+        "category": "Pasta",
+        "image": "images/pasta1.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Pasta 20$",
+        "price": 20,
+        "category": "Pasta",
+        "image": "images/pasta2.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Pasta 22$",
+        "price": 22,
+        "category": "Pasta",
+        "image": "images/pasta5.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Pasta 27$",
+        "price": 27,
+        "category": "Pasta",
+        "image": "images/pasta6.jpg"
+    }
+]
+}

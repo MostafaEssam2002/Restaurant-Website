@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Hero Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="images/logo.png" alt="" id="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#cards" class="cart-icon">Cards <span id="count">0</span></a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('images/slide_1.jpg');">
+            </div>
+            <div class="slide" style="background-image: url('images/slide_2.jpg');">
+            </div>
+            <div class="slide" style="background-image: url('images/slide_3.jpg');">
+            </div>
+            <div class="slide" style="background-image: url('images/res_img_5.jpg');">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Enjoy Our<br>Delicious Meal</h1>
+            <p class="hero-description">
+                Experience culinary excellence with our carefully crafted dishes, 
+                made from the finest ingredients by our expert chefs. Every bite 
+                tells a story of passion, tradition, and exceptional taste.
+            </p>
+        </div>
+
+        <button class="nav-arrow prev" onclick="changeSlide(-1)">‹</button>
+        <button class="nav-arrow next" onclick="changeSlide(1)">›</button>
+        
+        <div class="slide-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="decorative-element left"></div>
+        <div class="decorative-element right"></div>
+        
+        <div class="about-container fade-in-on-scroll">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-description">
+                Welcome to our restaurant, where culinary artistry meets exceptional service. 
+                For over two decades, we have been dedicated to creating memorable dining 
+                experiences with authentic flavors, fresh ingredients, and a warm atmosphere 
+                that makes every guest feel at home.
+            </p>
+        </div>
+    </section>
+    
+    <section id="menu" class="menu-section fade-in-on-scroll">
+        <div class="menu-container">
+            <h2 class="menu-title">Our Menu</h2>
+            <div class="filter-buttons" id="filterButtons"></div>
+            <div class="products-grid" id="productsGrid"></div>
+            <div class="no-products" id="noProducts" style="display: none;">
+                No products found in this category
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Restaurant</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#privacy">Privacy policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#cooked">Cooked</a></li>
+                        <li><a href="#deliver">Deliver</a></li>
+                        <li><a href="#quality">Quality Food</a></li>
+                        <li><a href="#drinks">Drinks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact us</h3>
+                    <ul>
+                        <li>123 Street, Benha, Egypt</li>
+                        <li>+20 109 625 4594</li>
+                        <li><a href="mailto:custom@gmail.com">custom@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Opening</h3>
+                    <ul>
+                        <li>Monday - Saturday</li>
+                        <li>08AM - 12AM</li>
+                        <li>Sunday</li>
+                        <li>12PM - 08PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                Copyright ©2024 All rights reserved | DESIGN BY <a href="#iti">ITI</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4L12 20M12 4L6 10M12 4L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
