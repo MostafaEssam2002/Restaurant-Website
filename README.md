@@ -150,7 +150,7 @@ INSERT INTO products (name, price, image, category_id) VALUES
 
 1. **Download/Clone Project**
    ```bash
-   git clone https://github.com/yourusername/restaurant-website.git
+   git clone https://github.com/MostafaEssam2002/Restaurant-Website.git
    cd restaurant-website
    ```
 
