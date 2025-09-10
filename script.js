@@ -45,35 +45,35 @@
         let cart = [];
         let currentCategory = 'All';
 
-        // async function loadProductsData() {
-        //     try {
-        //         const response = await fetch('products.json');
-        //         if (!response.ok) {
-        //             throw new Error(`HTTP error! status: ${response.status}`);
-        //         }
-        //         productsData = await response.json();
-        //         console.log('Products data loaded successfully:', productsData);
-        //         return productsData;
-        //     } catch (error) {
-        //         console.error('Error loading products data:', error);
-        //         console.log('Using default data');
-        //         return productsData;
-        //     }
-        // }
         async function loadProductsData() {
             try {
-                const response = await fetch('http://localhost/task6-9/get_products.php') // بدل products.json
+                const response = await fetch('products.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 productsData = await response.json();
-                console.log('Products data loaded from MySQL:', productsData);
+                console.log('Products data loaded successfully:', productsData);
                 return productsData;
             } catch (error) {
                 console.error('Error loading products data:', error);
+                console.log('Using default data');
                 return productsData;
             }
         }
+        // async function loadProductsData() {
+        //     try {
+        //         const response = await fetch('http://localhost/task6-9/get_products.php') // بدل products.json
+        //         if (!response.ok) {
+        //             throw new Error(`HTTP error! status: ${response.status}`);
+        //         }
+        //         productsData = await response.json();
+        //         console.log('Products data loaded from MySQL:', productsData);
+        //         return productsData;
+        //     } catch (error) {
+        //         console.error('Error loading products data:', error);
+        //         return productsData;
+        //     }
+        // }
 
         async function initMenu() {
             showLoadingState();
